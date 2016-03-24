@@ -12,7 +12,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-class NMC:
+class MyClassifier:
+
+    def fit(self, X_train, Y_train):
+        None
+
+    def predict(self, X_test):
+        None 
+
+class NMC (MyClassifier):
     
     def fit(self, X_train, Y_train):
         self.labels = sorted(list(set(Y_train)))
