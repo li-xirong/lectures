@@ -5,8 +5,8 @@ import numpy as np
 
 
 image = io.imread('dolphins.jpg')
-rotate0 = transform.rotate(image, -30)
-rotate1 = transform.rotate(image, -60)
+rotate0 = transform.rotate(image, 30)
+rotate1 = transform.rotate(image, 60)
 
 fig, (ax0, ax1, ax2) = plt.subplots(ncols=3, figsize=(8, 4))
 ax0.imshow(image, cmap=plt.cm.gray)
